@@ -38,11 +38,11 @@
 
   - They evaluate the system with self-play simulation, where one vanilla system plays the user by retrieving the next response without knowledge of the end target *t*. Another agent tries to guide the conversation toward *t*. In TGPC, the target is achieved whenever the word *t*, or its WordNet synonym (defined as a word that has content similarity score > 0.9), is mentioned in the conversation. In CWC the target is achieved when the exact target word is mentioned. The maximum allowed number of turns in the conversation is eight (if an agent does not reach the target by then, it is counted as a failure). They measure the success rate (reaching target by the 8th turn) and the average number of turns it takes to reach *t*.
 
-<img src="https://user-images.githubusercontent.com/89645136/231024925-ae98cf0c-c4b9-4443-92ed-47874383a8bc.png" width="700">
+<img src="https://user-images.githubusercontent.com/89645136/231024925-ae98cf0c-c4b9-4443-92ed-47874383a8bc.png" width="600">
   
   - They also carry out human evaluation for the same metrics as above.
 
-<img src="https://user-images.githubusercontent.com/89645136/231025033-30a5a94a-b283-44a8-b28d-f45069a75c51.png" width="650">
+<img src="https://user-images.githubusercontent.com/89645136/231025033-30a5a94a-b283-44a8-b28d-f45069a75c51.png" width="550">
   
 - Example conversations
   

@@ -3,7 +3,7 @@
 - Title: Target-Guided Dialogue Response Generation Using Commonsense and Data Augmentation
 - Authors: Prakhar Gupta, Harsh Jhamtani, Jeffrey P. Bigham
 - Link: https://arxiv.org/abs/2205.09314
-- Repository: https://github.com/google-research/task-oriented-dialogue/tree/main/generation
+- Repository: https://github.com/prakharguptaz/target-guided-dialogue-coda
 - Tags: Target-Guiding, Knowledge Graphs, Chatbots
 - Year: 2022
 
@@ -19,7 +19,7 @@
 
   - Strategy
     - In a conversation between two speakers A and B, given a context *c* and a target utterance *t* for speaker B, the system should generate a transitition utterance *s* for speaker B, which should contribute toward a smooth transition from *c* to *t*.
-    - They repurpose the DailyDialog chit-chat dataset for the task of target-guided response generation, making it similar in structure to the Otters dataset. The latter is a dataset of single-turn conversations made up of a context utterance $u_a$ from speaker A, a target $u_b$ from speaker B, and a transition utterance *s* for B to serve as a smooth transition link between $u_a$ and $u_b$.
+    - They [repurpose the DailyDialog chit-chat dataset](https://drive.google.com/drive/folders/1xuzHVqoLXUkD9XCjWpB5zFsJlBvKetAT) for the task of target-guided response generation, making it similar in structure to the Otters dataset. The latter is a dataset of single-turn conversations made up of a context utterance $u_a$ from speaker A, a target $u_b$ from speaker B, and a transition utterance *s* for B to serve as a smooth transition link between $u_a$ and $u_b$.
   
   - Architecture
     

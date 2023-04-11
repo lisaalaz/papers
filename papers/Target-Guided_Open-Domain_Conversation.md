@@ -3,6 +3,7 @@
 - Title: Target-Guided Open-Domain Conversation
 - Authors: Jianheng Tang, Tiancheng Zhao, Chenyan Xiong, Xiaodan Liang, Eric P. Xing, Zhiting Hu
 - Link: https://arxiv.org/abs/1905.11553
+- Repository: https://github.com/squareRoot3/Target-Guided-Conversation
 - Tags: Target-Guiding, Chatbots
 - Year: 2019
 
@@ -12,6 +13,7 @@
   
   - A generalizable (i.e. domain-agnostic) method for proactively guiding an open-ended chatbot's conversation toward a designated target, while chatting naturally with the user.
   - They propose a structured approach based on keywords for conditioning the chatbot's responses.
+  - They present a new dataset derived from PersonaChat, where each conversation turn has been annotated with keywords. Dataset can be downloaded [here](https://drive.google.com/file/d/1oTjOQjm7iiUitOPLCmlkXOCbEPoSWDPX/view).
 
 - How
 

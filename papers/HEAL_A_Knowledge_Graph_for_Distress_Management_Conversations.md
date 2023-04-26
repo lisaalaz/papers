@@ -2,7 +2,7 @@
 
 - Title: HEAL: A Knowledge Graph for Distress Management Conversations
 - Authors: Anuradha Welivita, Pearl Pu
-- Link: https://ojs.aaai.org/index.php/AAAI/article/view/21398/21147
+- Link:https://ojs.aaai.org/index.php/AAAI/article/view/21398
 - Repository: https://github.com/anuradha1992/HEAL
 - Tags: Knowledge Graphs, Chatbots, Mental Health
 - Year: 2022

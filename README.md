@@ -7,3 +7,6 @@ A collection of short summaries of NLP papers.
 
 #### Knowledge graphs
 - [HEAL: A Knowledge Graph for Distress Management Conversations](https://github.com/lisaalaz/papers/blob/master/papers/HEAL_A_Knowledge_Graph_for_Distress_Management_Conversations.md) (Welivita and Pu, 2022)
+
+#### Datasets
+- [ANNO-MI: A Dataset of Expert-Annotated Counselling Dialogues](https://github.com/lisaalaz/papers/blob/master/papers/ANNO-MI_A_Dataset_of_Expert-Annotated_Counselling_Dialogues.md) (Wu et al., 2022)

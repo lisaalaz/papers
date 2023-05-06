@@ -9,6 +9,8 @@ A collection of short summaries of NLP papers.
 - [Improving Language Models by Retrieving from Trillions of Tokens](https://github.com/lisaalaz/papers/blob/master/papers/Improving_Language_Models_by_Retrieving_from_Trillions_of_Tokens.md) (Borgeaud et al., 2021)
 - [Generalization through Memorization: Nearest Neighbor Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Generalization_through_Memorization_Nearest_Neighbor_Language_Models.md) (Khandelwal et al., 2020)
 
+#### Attributed LMs
+
 #### Knowledge graphs
 - [HEAL: A Knowledge Graph for Distress Management Conversations](https://github.com/lisaalaz/papers/blob/master/papers/HEAL_A_Knowledge_Graph_for_Distress_Management_Conversations.md) (Welivita and Pu, 2022)
 

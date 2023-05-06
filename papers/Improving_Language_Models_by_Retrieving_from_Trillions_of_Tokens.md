@@ -21,14 +21,14 @@
     - They use the ScaNN library to query the DB (ScaNN can query a DB of N elements in approximately O(log N) time) and $L_2$ distance.
     - The LM is an encoder-decoder transformer which performs cross-attention on the retrieved data. 
     - Its encoder encodes not just the input but also the retrieved neighbouring chunks. The encoding of the $j^{th}$ neighbour of the $u^{th}$ chunk, that is $RET(C_u)^j$, depends on the attended activation $H_u = (h_{(u-1)m+i})_{i \in [1,m]}$, which has size $m \times d$.
-    - Its decoder is made of standard transformer blocks as well as RETRO blocks. The RETRO blocks include a chunked cross-attention (CCA) layer that incorporates the information from the encoded retrievals. To perform CCA first an intermediate activation $H \in \R^{n \times d}$ is split into $l-1$ attending chunks, then the layer computes the cross-attention between the embedding of the last token in the previous chunk $C_u$ and those of the first $m-1$ tokens of the current chunk $C_{u+1}$ and the encoded neighbours of $C_u$ (denoted by $E_u$). The $l-1$ outputs of CCA are then concatenated.
+    - Its decoder is made of standard transformer blocks as well as RETRO blocks. The RETRO blocks include a chunked cross-attention (CCA) layer that incorporates the information from the encoded retrievals. To perform CCA first an intermediate activation $H \in ℝ^{n \times d}$ is split into $l-1$ attending chunks, then the layer computes the cross-attention between the embedding of the last token in the previous chunk $C_u$ and those of the first $m-1$ tokens of the current chunk $C_{u+1}$ and the encoded neighbours of $C_u$ (denoted by $E_u$). The $l-1$ outputs of CCA are then concatenated.
     - Overall, the RETRO model, parametrized by $\theta$, takes as input both the previous tokens and their neighbours, and produces an output by applying the sequence log-likelihood: 
       
       $L(X|\theta, D) = \sum^l_{u=1} \sum^m_{i=1} \ell_{\theta}(x_{(u-1)m+i} | (x_j)_{j<(u-1)m+i}, (RET_D(C_{u'}))_{u'<u})$ 
 
       where $D$ is the database, $l$ is the total number of chunks, $m$ is the size of the chunks, $x_{(u-1)m+i}$ is the $i^{th}$ token of the $u^{th}$ chunk, $(x_j)_{j<(u-1)m+i}$ are the previously seen tokens and $(RET_D(C_{u'}))_{u'<u}$ are the neighbours of chunk $C_u'$ which precedes chunk $C_u$.
 
-      
+![image](https://user-images.githubusercontent.com/89645136/236645826-5338f706-64ea-4dfd-bf70-044c513ade7c.png)      
   
   - Strategy
     
@@ -36,7 +36,7 @@
     - To avoid the overhead cost of retrieving at training time, all the retrievals are pre-computed into the train set. Each chunk is augmented with its k nearest neighbour chunks from the DB.
     - Before retrieval, they filter out any neighbours that originate from the same document as the current imput sequence (to avoid retrieving the next imput chunk $C_{u+1}$ when retrieving using chunk $C_u$).
     - At training time they also remove from the retrieval corpus all documents that have a 13-gram Jaccard similarity >= 0.8 to a validation or test document. This is to minimise test set leakage.
-    - They set $RET(C_1) = \empty$ for the first chunk. In other words, the likelihood of tokens generated from the first chunk does not depend on any retrievals.
+    - They set $RET(C_1) = ∅$ for the first chunk. In other words, the likelihood of tokens generated from the first chunk does not depend on any retrievals.
 
 - Results
 
@@ -46,5 +46,8 @@
   - They experiment with their model on question-answeing tasks and they compare it to KNN-LM ([Khandelwal et al., 2020](https://github.com/lisaalaz/papers/blob/master/papers/Generalization_through_Memorization_Nearest_Neighbor_Language_Models.md)), on the Wikitext-103 dataset (results in the figures below).
   - Finally, they show that any pretrained transformer can be finetuned in RETRO fashion, by freezing the pretrained weights and only training the CCA and neighbour encoder parameters (after having intialised them randomly). They show that RETRO-fitting pretrained models surpasses the baseline and comes close to the performance of the RETRO models trained from scratch. 
 
+<img src="https://github.com/lisaalaz/papers/blob/master/images/RETRO_QA_results.png" width="800">
+
+![image](https://user-images.githubusercontent.com/89645136/236645961-e91a3406-21a1-4bc1-8d10-947e1160b77c.png)
 
   

@@ -10,6 +10,7 @@ A collection of short summaries of NLP papers.
 - [Generalization through Memorization: Nearest Neighbor Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Generalization_through_Memorization_Nearest_Neighbor_Language_Models.md) (Khandelwal et al., 2020)
 
 #### Attributed LMs
+- [Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Attributed_Question_Answering_Evaluation_and_Modeling_for_Attributed_Large_Language_Models.md) (Bohnet et al., 2023)
 
 #### Knowledge graphs
 - [HEAL: A Knowledge Graph for Distress Management Conversations](https://github.com/lisaalaz/papers/blob/master/papers/HEAL_A_Knowledge_Graph_for_Distress_Management_Conversations.md) (Welivita and Pu, 2022)

@@ -15,7 +15,7 @@
   - An evaluation framework for attributed question answering (QA).
   - An analysis of several existing systems based on this framework.
 
-
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Attributed_QA_example.png" width="400">
   
 - How
 
@@ -40,6 +40,6 @@
   - They find that systems which perform best on human evaluation do not necessarily achieve the best exact match (EM) accuracy.
   - They also find that the best RTR system achieves the highest performance overall (in both AIS and AutoAIS), as shown in Table 1 below.
 
-
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Attributed_QA_results.png" width="450">
 
   

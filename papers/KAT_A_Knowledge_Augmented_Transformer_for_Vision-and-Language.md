@@ -13,6 +13,8 @@
   
   - A multimodal (vision and language) knowledge-augmented transformer (KAT) that integrates implicit and explicit knowledge to answer text questions over images.
   - They define as explicit knowledge the knowledge derived from exernal KBs and implicit knowledge the one stored in the parameters of a LLM.
+
+![image](https://github.com/lisaalaz/papers/assets/89645136/bb8cb945-9487-4a6a-8353-553b37adcdf0)
   
 - How
 
@@ -31,11 +33,15 @@
       - The two question-knowledge pairs so formed are encoded separately by going through an embedding layer first and then a series of T5 encoder layers.
       - For each pair, they take the token embeddings from the last encoder layer and average them, obtaining an embedding matrix $X^{exp}$ of size $m \times d$ (where $m$ is the number of retrieved KB entries) and an embedding matrix $X^{imp}$ of size $p \times d$ (where $p$ is the number of implicit knowledge entries provided).
       - Then the embeddings in $X^{exp}$ and $X^{imp}$ are concatenated together to form $X \in ℝ^{(m+p) \times d}$ and used as a global knowledge matrix, which is the input to the cross-attention layer.
-      - The embeddings of $X^{exp}$ and $X^{imp}$ are fed into a sequence of T5 decoder layers to generate the final answer. To train the model, CE loss is used therefore: $L_{CE} = - \sum_{t=1}^n log$  $p_{\theta} (y_t | y_{{}<t}, x^{exp}; x^{imp})$.
+      - The embeddings of $X^{exp}$ and $X^{imp}$ are fed into a sequence of T5 decoder layers to generate the final answer. CE loss is used for training.
   
+![image](https://github.com/lisaalaz/papers/assets/89645136/ed5479b1-e178-4a47-a528-99f2f06fd22d)
 
 - Results
 
   - KAT obtains SOTA performance on the OK-VQA dataset. Predictions are evaluated against the ground truth (normalised by lowercasing, removing articles, punctuation and duplicated white space).
   - They also show that without the reasoning module, without either of the two knowledge types (implicit and explicit), the model performs worse.
+
+![image](https://github.com/lisaalaz/papers/assets/89645136/692dd439-d910-4649-a045-3090231e8769)
+
   

@@ -19,3 +19,4 @@ A collection of short summaries of NLP papers.
 - [ANNO-MI: A Dataset of Expert-Annotated Counselling Dialogues](https://github.com/lisaalaz/papers/blob/master/papers/ANNO-MI_A_Dataset_of_Expert-Annotated_Counselling_Dialogues.md) (Wu et al., 2022)
 
 #### Multimodal models
+- [KAT: A Knowledge Augmented Transformer for Vision-and-Language](https://github.com/lisaalaz/papers/blob/master/papers/KAT_A_Knowledge_Augmented_Transformer_for_Vision-and-Language.md) (Gui et al., 2022)

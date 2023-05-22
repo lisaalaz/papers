@@ -26,7 +26,12 @@
       - PaLI-3B (initialised on ViT-G and mT5-large respectively).
       - PaLI-15B (initialised on ViT-G and mT5-XXL respectively).
       - PaLI-17B (initialised on ViT-e - a new 4B vision transformer they trained - and mT5-XXL respectively).
+
+    ![image](https://github.com/lisaalaz/papers/assets/89645136/d69daea2-fd03-4f85-886e-b471fbfccda3)
+
     - PaLI is then further pretrained on a mixture of tasks, such as image captioning, VQA, scene-text understanding, etc., where the tasks are framed as "image + query to answer" and where the query and answer are texts. They also include purely textual tasks in the pretraining to avoid the LLM's catastrophic forgetting of its NLU and NLG capabilities. All pretraining tasks use teacher forcing.
+
+![image](https://github.com/lisaalaz/papers/assets/89645136/e7abcee1-31a9-4072-9694-735c216d198d)
 
   - Dataset
 
@@ -36,9 +41,12 @@
       - The image embeddings are trained first, using a semi-supervised approach.
       - Then the text embeddings are learned via a contrastive approach using a transformer encoder. This forces the embeddings of both modalities to be in the same multi-dimensional space.
     - To train PaLI, they only keep the 10% of the original WebLI pairs that score higher for cross-modal similarity (that is, approximately 1B examples).
-   
-  
+
+![image](https://github.com/lisaalaz/papers/assets/89645136/9fe4fa23-c955-48d9-9c38-d712e7c374f6)
+
 - Results
 
   - The alargest PALI model (17B) achieves SOTA on various benchmarks in image captioning and VQA.
   
+![image](https://github.com/lisaalaz/papers/assets/89645136/9b9acf3f-bad4-494e-be97-11ab0a7bafb0)
+

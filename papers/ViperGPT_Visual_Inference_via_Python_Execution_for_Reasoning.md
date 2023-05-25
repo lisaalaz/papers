@@ -49,5 +49,6 @@
 
   They also show their framework can answer diverse queries not included in the above benchmarks, such as those below. 
 
+![image](https://github.com/lisaalaz/papers/assets/89645136/fe249ed3-7a86-4d8d-beae-381066dd5eba)
 
   

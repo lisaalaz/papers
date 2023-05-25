@@ -17,6 +17,7 @@ A collection of short summaries of NLP papers.
 
 #### Datasets
 - [ANNO-MI: A Dataset of Expert-Annotated Counselling Dialogues](https://github.com/lisaalaz/papers/blob/master/papers/ANNO-MI_A_Dataset_of_Expert-Annotated_Counselling_Dialogues.md) (Wu et al., 2022)
+- [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](https://github.com/lisaalaz/papers/blob/master/papers/Event2Mind_Commonsense_Inference_on_Events_Intents_and_Reactions.md) (Rashkin et al., 2019)
 
 #### Multimodal models
 - [PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://github.com/lisaalaz/papers/blob/master/papers/PaLI_A_Jointly-Scaled_Multilingual_Language-Image_Model.md) (Chen et al., 2022)

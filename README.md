@@ -20,5 +20,6 @@ A collection of short summaries of NLP papers.
 - [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](https://github.com/lisaalaz/papers/blob/master/papers/Event2Mind_Commonsense_Inference_on_Events_Intents_and_Reactions.md) (Rashkin et al., 2019)
 
 #### Multimodal models
+- [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 - [PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://github.com/lisaalaz/papers/blob/master/papers/PaLI_A_Jointly-Scaled_Multilingual_Language-Image_Model.md) (Chen et al., 2022)
 - [KAT: A Knowledge Augmented Transformer for Vision-and-Language](https://github.com/lisaalaz/papers/blob/master/papers/KAT_A_Knowledge_Augmented_Transformer_for_Vision-and-Language.md) (Gui et al., 2022)

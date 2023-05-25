@@ -26,17 +26,26 @@
     - They use the code LLM GPT-3 Codex to instantiate the program generator $\pi$ (no fine tuning required). They feed to it a prompt containing the query and the API specification, omitting the full implementation of each function and only including the function signatures and docstrings. This model outputs a Python function definition given as a string.
     - They then compile and execute the output string from the previous step (that is, the program $z$). This takes the input image or video $x$ and outputs the result $r$ which answers the query $q$. The execution of $z$ is a simple Python call, and it can leverage not just the given API functions but also any inbuilt function, common Python modules such as math or datetime, and Python control structures.
 
+   <img src="https://github.com/lisaalaz/papers/blob/master/images/ViperGPT_architecture.png" width="500">
 
 - Results
 
   They evaluate on several tasks:
   - Visual grounding (i.e. identifying the bounding box in an image that best corresponds to a query). For this they evaluate on RefCOCO and RefCOCO+.
 
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ViperGPT_RefCOCO_eval.png" width="400">
+
   - Compositional image question answering (which requires decomposing complex queries into simple tasks). For this they evaluate on GQA.
+
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ViperGPT_GQA_eval.png" width="400">
 
   - External knowledge-dependent image question answering, evaluated on OK-VQA.
 
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ViperGPT_OK-VQA_eval.png" width="330">
+
   - Video causal/temporal reasoning, evaluated on NExT-QA.
+
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ViperGPT_NExT-QA_eval.png" width="420">
 
   They also show their framework can answer diverse queries not included in the above benchmarks, such as those below. 
 

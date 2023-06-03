@@ -5,6 +5,8 @@ A collection of short summaries of NLP papers.
 - [Dynamic Knowledge Routing Network For Target-Guided Open-Domain Conversation](https://github.com/lisaalaz/papers/blob/master/papers/Dynamic_Knowledge_Routing_Network_for_Target-Guided_Open-Domain_Conversation.md) (Qin et al., 2020)
 - [Target-Guided Open-Domain Conversation](https://github.com/lisaalaz/papers/blob/master/papers/Target-Guided_Open-Domain_Conversation.md) (Tang et al., 2019)
 
+#### Chain-of-thought reasoning
+
 #### Retrieval-augmented generation
 - [Improving Language Models by Retrieving from Trillions of Tokens](https://github.com/lisaalaz/papers/blob/master/papers/Improving_Language_Models_by_Retrieving_from_Trillions_of_Tokens.md) (Borgeaud et al., 2021)
 - [Generalization through Memorization: Nearest Neighbor Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Generalization_through_Memorization_Nearest_Neighbor_Language_Models.md) (Khandelwal et al., 2020)

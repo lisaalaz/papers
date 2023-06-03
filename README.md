@@ -6,6 +6,7 @@ A collection of short summaries of NLP papers.
 - [Target-Guided Open-Domain Conversation](https://github.com/lisaalaz/papers/blob/master/papers/Target-Guided_Open-Domain_Conversation.md) (Tang et al., 2019)
 
 #### Chain-of-thought reasoning
+- [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Zhou et al., 2023)
 
 #### Retrieval-augmented generation
 - [Improving Language Models by Retrieving from Trillions of Tokens](https://github.com/lisaalaz/papers/blob/master/papers/Improving_Language_Models_by_Retrieving_from_Trillions_of_Tokens.md) (Borgeaud et al., 2021)

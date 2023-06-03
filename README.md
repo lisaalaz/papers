@@ -5,6 +5,8 @@ A collection of short summaries of NLP papers.
 - [Dynamic Knowledge Routing Network For Target-Guided Open-Domain Conversation](https://github.com/lisaalaz/papers/blob/master/papers/Dynamic_Knowledge_Routing_Network_for_Target-Guided_Open-Domain_Conversation.md) (Qin et al., 2020)
 - [Target-Guided Open-Domain Conversation](https://github.com/lisaalaz/papers/blob/master/papers/Target-Guided_Open-Domain_Conversation.md) (Tang et al., 2019)
 
+#### Chain-of-thought reasoning
+
 #### Retrieval-augmented generation
 - [Improving Language Models by Retrieving from Trillions of Tokens](https://github.com/lisaalaz/papers/blob/master/papers/Improving_Language_Models_by_Retrieving_from_Trillions_of_Tokens.md) (Borgeaud et al., 2021)
 - [Generalization through Memorization: Nearest Neighbor Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Generalization_through_Memorization_Nearest_Neighbor_Language_Models.md) (Khandelwal et al., 2020)
@@ -20,5 +22,6 @@ A collection of short summaries of NLP papers.
 - [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](https://github.com/lisaalaz/papers/blob/master/papers/Event2Mind_Commonsense_Inference_on_Events_Intents_and_Reactions.md) (Rashkin et al., 2019)
 
 #### Multimodal models
+- [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 - [PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://github.com/lisaalaz/papers/blob/master/papers/PaLI_A_Jointly-Scaled_Multilingual_Language-Image_Model.md) (Chen et al., 2022)
 - [KAT: A Knowledge Augmented Transformer for Vision-and-Language](https://github.com/lisaalaz/papers/blob/master/papers/KAT_A_Knowledge_Augmented_Transformer_for_Vision-and-Language.md) (Gui et al., 2022)

@@ -22,7 +22,7 @@
   
   - Architecture
     
-    - They specify an API containing methods that call existing pretrained models to compute their outputs. For examples, they use the MiDaS model for computing the depth in an image. For queries that require an external KB, they have a dedicated method that queries the GPT-3 text model to return the text response to a given query.
+    - They specify an API containing methods that call existing pretrained models to compute their outputs. For example, they use the MiDaS model for computing the depth in an image. For queries that require an external KB, they have a dedicated method that queries the GPT-3 text model to return the text response to a given query.
     - They use the code LLM GPT-3 Codex to instantiate the program generator $\pi$ (no fine tuning required). They feed to it a prompt containing the query and the API specification, omitting the full implementation of each function and only including the function signatures and docstrings. This model outputs a Python function definition given as a string.
     - They then compile and execute the output string from the previous step (that is, the program $z$). This takes the input image or video $x$ and outputs the result $r$ which answers the query $q$. The execution of $z$ is a simple Python call, and it can leverage not just the given API functions but also any inbuilt function, common Python modules such as math or datetime, and Python control structures.
 

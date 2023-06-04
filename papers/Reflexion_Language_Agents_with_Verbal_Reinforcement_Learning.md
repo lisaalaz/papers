@@ -4,7 +4,7 @@
 - Authors: Noah Shinn, Federico Cassano, Beck Labash, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
 - Link: https://arxiv.org/abs/2303.11366
 - Repository: https://github.com/noahshinn024/reflexion
-- Tags: Reinforcement learning, decision making
+- Tags: Reasoning, prompting, reinforcement learning, decision making
 - Year: 2023
 
 # Summary

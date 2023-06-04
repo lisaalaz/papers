@@ -28,6 +28,8 @@
     - Therefore, their ToT method actively maintains a tree of thoughts where each thought is a coherent language sequences that serves as an intermediate step toward solving a problem.
     - The LM can then self-evaluate the progress that different intermediate thoughts make toward solving the problen.
     - This is combined with search algorithms, e.g. breadth-first search (BFS) and depth-first search (DFS), allowing exploration of the tree, lookahead and backtracking.
+
+  [insert task overview here]
   
   - Architecture
     - ToT frames a problem as a search over a tree where each node is a state $s = [x, z_{1...i}]$ representing a partial solution with the input and the sequence of thoughts so far.
@@ -41,13 +43,21 @@
       3) A __state evaluator__ to evaluate these states heuristically. The state evaluator $V(p_\theta, S)$ evaluates, given different states, the progress they make toward solving the problem, thus serving as a heuristic for the search algorithm to determine which states to keep exploring and in which order. To this end, the LM is used to reason about states (which requires no training or programming). Again, here two strategies for evaluation are considered (to be used independently or both togeher):
          - Valuing each state independently, where the value $V$ is given by $V(p_\theta, S) ∼ p_\theta^{value}(v|s)\any s \in S$. Here a value prompt reasons about the state $s$ to generate a scalar value $v$ or a classification label that can heuristically be converted into a value. The reasoning behind this evaluation varies according to the task. They explore evaluation via lookahead simulations (e.g. quickly confirm that 5, 5, 14 can reach 24 via 5 + 5 + 14, or “hot_l” can mean “inn” via filling “e” in “_”) plus commonsense (e.g. 1 2 3 are too small to reach 24, or no word can start with “tzxc”). The former aims at promoting good states, whereas the latter at filtering out bad” states.
          - Voting across states. Here we have $V(p_\theta, S)(s) = \ones[s=s*]$, where a good state $s* ∼ p_\theta^{vote}(s*|S)$ is voted by comparing different states in S by using a vote prompt. When problem success is harder to directly value (e.g. passage coherency), it is natural to to instead compare different partial solutions and vote for the most promising one.
-      4) A __search algorithm__ to search the tree. Different search algorithms can be used in the ToT framework the choice depending on the tree structure. In particular they explore BFS and DFS.
+      4) A __search algorithm__ to search the tree. Different search algorithms can be used in the ToT framework the choice depending on the tree structure. In particular they explore BFS (best for the shallow trees of the Game of 24 and Creative Writing tasks) and DFS (best for the deep trees of the Crosswords task).
     
   
 - Results
 
   - The three novel tasks they propose (Game of 24, Creative Writing and Crosswords) require deductive, mathematical, commonsense and lexical reasoning abilities, as well as systematic planning or search. These tasks are challenging even for the largest and most capable LLM currently available (i.e. GPT-4).
 
-  - Game of 24 is a mathematical reasoning challenge, where the goal is to use 4 numbers and basic arithmetic operations to obtain the number 24.
+  - Game of 24 is a mathematical reasoning challenge, where the goal is to use 4 numbers and basic arithmetic operations to obtain the number 24. For this, they consider the output of the model sucessful if it is a valid equation totalling 24 and uses each input number once. The metrics are reported across 100 games.
 
+  [insert table 2 and fig 3 - game of 24 results]
+
+  - The creative writing task consist of creating a coherent passage with 4 paragraphs tha end in 4 random sentences that are given as input. They evaluate passage coherency in two ways: using a GPT-4 zero-shot prompt to provide a 1-10 scalar score, or using human judgments to compare pairs of outputs from different methods.
+
+  [insert fig 5 - creative writing results]
+
+  - In mini crossword task the tree is deeper, unlike the other two tasks where it is relatively shallow. In this task the model has to solve $5 \times 5$ mini crosswords. For each task, the input describes the 5 horizontal clues and 5 vertical clues, and the output is a board of 5 × 5 = 25 letters. For evaluation they consider three levels of success: the portion of correct letters (25 per game), words (10 per game), and games.
   
+  [insert table 3 - mini crosswords results]

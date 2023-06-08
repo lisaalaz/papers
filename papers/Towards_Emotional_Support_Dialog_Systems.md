@@ -47,6 +47,8 @@
     - Collected conversations that are evaluated to be low-quality are filtered out.
 
     <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_dataset.png" width="500">
+    
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_strategies.png" width="500">
 
 - Experiments
 
@@ -77,3 +79,5 @@
   Each pair of models was compared by 100 conversations with crowdworkers.
 
    <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_human_eval.png" width="500">
+   
+   <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_strategies_human_eval.png" width="500">

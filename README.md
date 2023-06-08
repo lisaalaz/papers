@@ -23,6 +23,7 @@ A collection of short summaries of NLP papers.
 
 #### Datasets
 - [ANNO-MI: A Dataset of Expert-Annotated Counselling Dialogues](https://github.com/lisaalaz/papers/blob/master/papers/ANNO-MI_A_Dataset_of_Expert-Annotated_Counselling_Dialogues.md) (Wu et al., 2022)
+- [Towards Emotional Support Dialog Systems](https://github.com/lisaalaz/papers/blob/master/papers/Towards_Emotional_Support_Dialog_Systems.md) (Liu et al., 2021)
 - [Event2Mind: Commonsense Inference on Events, Intents, and Reactions](https://github.com/lisaalaz/papers/blob/master/papers/Event2Mind_Commonsense_Inference_on_Events_Intents_and_Reactions.md) (Rashkin et al., 2019)
 
 #### Multimodal models

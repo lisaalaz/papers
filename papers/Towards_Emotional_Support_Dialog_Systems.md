@@ -29,14 +29,14 @@
       2) Emotion state modeling, as the user's emotional state must be tracked dynamically (this is used both in strategy selecion and for evaluation).
       3) Evaluation of ES effectiveness, which is in addition of measuring other conversational metrics such as relevance, coherence and engagement.
 
-    [add ESC conversation img]
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_conversation.png" width="400">
 
   - ESC Framework
     - The ESC Framework (based on the Helping Skills Theory) consists of three stages: Exploration n (exploring to help the help-seeker identify the problems), Comforting (providing support through empathy and understanding) and Action (helping the help-seeker make decisions on actions to cope with the problems).
     - Note that in the original Helping Skills Theory the second phase is Insight (helping the help-seeker move to new depths of selfunderstanding), here adapted to Comforting since - according to the authors - the former *usually requires re-interpreting users’ behaviors and feelings, which is both difficult and risky for the supporters without sufficient support experience*.
     - Each of these three stages contains several support strategies, adapted from the Helping Skills Theory (again, note that some strategies in the original literature have been discarded by the authors, such as the challenging strategy which requires pointing out the discrepancies or irrational beliefs that the helpseeker is unaware of or unwilling to change).
 
-    [insert figure 3 ESC framework]
+     ![image](https://github.com/lisaalaz/papers/assets/89645136/e6c146cb-17c2-4256-8f33-e88883c7abc4)
     
   - Dataset   
     - They collect the ESConv dataset by having trained crowdworkers chatting in pairs and playing help-seeker and supporter roles.
@@ -46,8 +46,7 @@
     - Help-seekers also rate their emotion intensity after the conversation, as well as the supporter's empathy and understanding and the relevance of their responses. 
     - Collected conversations that are evaluated to be low-quality are filtered out.
 
-    [ESC dataset stats here]
-    [ESC strategies here]
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_dataset.png" width="500">
 
 - Experiments
 
@@ -64,7 +63,7 @@
   - Oracle models are superior to vanilla models, but joint models perform worse than vanilla if the predicted strategy is different from the ground truth.
   - BlenderBot-based variants perform better than DialogGPT-based ones.
   
-  [ESC aut eval here]
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_aut_eval.png" width="500">
 
   Human evaluation:
   
@@ -77,5 +76,4 @@
 
   Each pair of models was compared by 100 conversations with crowdworkers.
 
-  [ESC human eval]
-  [ESC strategies human eval]
+   <img src="https://github.com/lisaalaz/papers/blob/master/images/ESC_human_eval.png" width="500">

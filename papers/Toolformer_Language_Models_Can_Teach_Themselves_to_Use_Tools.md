@@ -12,6 +12,8 @@
 - What
   
   - They introduce a new model trained to decide, given a text input, which tools/APIs to call, when, with what arguments and how to incorporate the results into the generation process.
+ 
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_examples.png" width="400">
 
 - How
   
@@ -21,17 +23,21 @@
   - Once the dataset has been created with the above method, the LLM is finetuned on it.
   - Consider that as the method is dataset-agnostic, the same dataset used for LLM pretraining can be used (to avoid loss of generality).
   - For Toolformer to work, API inputs and outputs need to be able to be represented as text sequences. Special tokens are used to divide these from the rest of the text.
+ 
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_dataset_pipeline.png" width="800">
+
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_prompt.png" width="400">
 
 - Training method
 
   - They take a language modelling dataset $C$ and augment it with API calls using the language model $M$ and the method show in Fig. 2:
     1) First they sample a large number of potential API calls with $M$ (using the prompt with exemplars illustrated in Fig. 3).
     2) Then they execute the calls.
-    3) Then they check whether the obtained responses are useful for predicting future tokens and filter out those that don't. They do this by definining a weighted CE loss $L_i(\bold{z})=-\sum_{j=i}^n w_{j-i} \cdot \log{p_M}(x_j | \bold{z}, x_{1:j-1})$ for a sequence $\bold{x}=x_1,...,x_n$, a prefix $\bold{z}$, a sequence of weights $(w_i | i \in \N)$ and an API call $c_i$ at position $i$ in the sequence with response $r_i$. So in other words, this is the loss of the partial sequence $x_i,...,x_n$. They instantiate two versions of this loss: 
+    3) Then they check whether the obtained responses are useful for predicting future tokens and filter out those that don't. They do this by definining a weighted CE loss $L_i(\textbf{z})=-{\sum_{j=i}}^n w_{j-i} \cdot \log{p_M}(x_j | \textbf{z}, x_{1:j-1})$ for a sequence $\textbf{x}=x_1,...,x_n$, a prefix $\textbf{z}$, a sequence of weights $(w_i | i \in \N)$ and an API call $c_i$ at position $i$ in the sequence with response $r_i$. So in other words, this is the loss of the partial sequence $x_i,...,x_n$. They instantiate two versions of this loss: 
    
-       (a) $L_i^{+} = L_i(\bold{e}(c_i, r_i))$, where $\bold{e}(c_i, r_i)$ is the API call including the result at position $i$ (this is the weighted loss over the partial sequence if the API call and results are given as a prefix to the model),
+       (a) $L_i^{+} = L_i(\textbf{e}(c_i, r_i))$, where $\textbf{e}(c_i, r_i)$ is the API call including the result at position $i$ (this is the weighted loss over the partial sequence if the API call and results are given as a prefix to the model),
 
-       (b) $L_i^{-} = \min(L_i(\epsilon), L_i(\bold{e}(c_i, \epsilon))$ where $\epsilon$ represents the empty sequence (this is the minimum of the losses of doing no API call or having the API call without response).
+       (b) $L_i^{-} = \min(L_i(\epsilon), L_i(\textbf{e}(c_i, \epsilon))$ where $\epsilon$ represents the empty sequence (this is the minimum of the losses of doing no API call or having the API call without response).
 
        They thus filter the sampled calls by keeping only those for which $L_i^{-} - L_i^{+} >= {\tau}_f$ holds, for a filtering threshold ${\tau}_f$.
     4) Finally they merge API calls for different tools with the data, resulting in the augmented dataset $C^{*}$ (some texts in $C^{*}$ may have multiple API calls).
@@ -61,3 +67,9 @@
   - TempLama (queries that change depending on the time) 
 
   and compare against a GPT-J baseline. Results are below.
+
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_res1.png" width="400"> <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_res2.png" width="400">
+  
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_res3.png" width="400">
+
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Toolformer_res4.png" width="800">

@@ -23,11 +23,11 @@ with Massive Tools via Tool Embeddings
   - Each toolken is inserted into the LLM head just like a regular word token embedding.
   - At generation, every time a toolken is decoded, the LLM switches into a special mode where it produces input arguments for the tool execution via prompting. The output of the tool execution are then inserted back into the generation. This is showin in Fig. 1.
   
-  %fig 1 here
+<img src="https://github.com/lisaalaz/papers/blob/master/images/ToolkenGPT_pipeline.png" width="800">
 
 - Training
   
-  - Each toolken is parametrised as a toolken embedding vector, and a set of toolken embeddings is a matrix $W_{\tau} \in \R^{|\Tau| \times d}$ where $\Tau = \lbrace {\tau}_1, {\tau}_2, ... \rbrace$ is the set of tools.
+  - Each toolken is parametrised as a toolken embedding vector, and a set of toolken embeddings is a matrix $W_{\tau} \in \mathbb{R}^{|T| \times d}$ where $T = \lbrace {\tau}_1, {\tau}_2, ... \rbrace$ is the set of tools.
   - The above matrix is concatenated with the vocabulary matrix $W_{v}$
   - Apart from $W_{\tau}$ concatenated at the LLM head, the rest of the LLM parameters remain frozen.
   - Moreover, unlike prompt or prefix tuning, it does not require to backpropagate all the way back through the main LLM body. This means that training is not much more computationally intensive than inference.
@@ -35,12 +35,12 @@ with Massive Tools via Tool Embeddings
 
   - Training data:
   
-    - From the example in Fig. 1, we have the sentence “the area is 256 square feet ...”. This is tokenized into the sequence $s = (“the”, “area”, “is”, “2”, “5”, “6”, “square”, “feet”, ...)$ and this is converted to $s
-    ' = (“the”, “area”, “is”, “[square]”, “[N/A]”, “[N/A]”, “square”, “feet”, ...)$, where the subsequence $(“2”, “5”, “6”)$ is masked with a sequence of equal lenghth with the tool call in first position and $“[N/A]”$ in the other positions. Note that the $“[N/A]”$ are used as mask so the LLM can ignore them in training, thanks to a modified training objective (see below).
+    - From the example in Fig. 1, we have the sentence “the area is 256 square feet ...”. This is tokenized into the sequence $s$ = ('the', 'area', 'is', '2', '5', '6', 'square', 'feet', ...) and this is converted to $s
+    '$ = ('the', 'area', 'is', '[square]', '[N/A]', '[N/A]', 'square', 'feet', ...), where the subsequence ('2', '5', '6') is masked with a sequence of equal lenghth with the tool call in first position and '[N/A]' in the other positions. Note that the '[N/A]' are used as mask so the LLM can ignore them in training, thanks to a modified training objective (see below).
     - The dataset they use to finetune is composed of these parallel sequences, $D = \lbrace (s, s') \rbrace$
-    - The training objective is to minimise $L = {\sum}_{(s, s') \in D} {\sum}^N_{i=1} - \log P(t'_i | t_{<i}) \textbf{1}_{t'_i \neq \text{[N/A]}}$, where the last part is simply a switch to ignore the $“[N/A]”$ tokens while training.
+    - The training objective is to minimise $L = \sum_{(s, s') \in D} {\sum_{i=1}}^N - \log P(t_i^{'} | t_{< i}) \mathbb{1}_{t'_i \neq [N/A]}$, where the last part is simply a switch to ignore the '[N/A]' tokens while training.
 
-  - To get the training data, they do not just use existing datasets but also explore creating a new dataset using LLMs, via in-context learning (this is not dissimilar to how they make the data in Toolformer).
+  - To get the training data, they do not just use existing datasets but also explore creating a new dataset using LLMs, via in-context learning (this is not dissimilar to how they make the data in [Toolformer](https://github.com/lisaalaz/papers/blob/master/papers/Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools.md)).
 
 - Inference
   
@@ -57,3 +57,7 @@ with Massive Tools via Tool Embeddings
     3) Embodied Plan Generation (VirtualHome dataset)
 
 The results of the experiments and comparison against the baselines are below.
+
+<img src="https://github.com/lisaalaz/papers/blob/master/images/ToolkenGPT_results1.png" width="800">
+<img src="https://github.com/lisaalaz/papers/blob/master/images/ToolkenGPT_results2.png" width="400">
+<img src="https://github.com/lisaalaz/papers/blob/master/images/ToolkenGPT_results3.png" width="800">

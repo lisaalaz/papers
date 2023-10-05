@@ -1,4 +1,4 @@
-A collection of short summaries of NLP papers.
+A collection of short summaries of ML and NLP papers.
 
 
 #### Strategic planning and reasoning

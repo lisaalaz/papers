@@ -9,6 +9,7 @@ A collection of short summaries of NLP papers.
 - [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Zhou et al., 2023)
 
 #### LLMs with tools
+- [ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings](https://github.com/lisaalaz/papers/blob/master/papers/ToolkenGPT_Augmenting_Frozen_Language_Models_with_Massive_Tools_via_Tool_Embeddings.md) (Hao et al., 2023)
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://github.com/lisaalaz/papers/blob/master/papers/Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools.md) (Schick et al., 2023)
 - [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 

@@ -2,16 +2,15 @@ A collection of short summaries of NLP papers.
 
 
 #### Strategic planning and reasoning
-- [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Zhou et al., 2023)
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://github.com/lisaalaz/papers/blob/master/papers/Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.md) (Shinn et al., 2023)
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Tree_of_Thoughts_Deliberate_Problem_Solving_with_Large_Language_Models.md) (Yao et al., 2023)
 - [Reasoning with Language Model is Planning with World Model](https://github.com/lisaalaz/papers/blob/master/papers/Reasoning_with_Language_Model_is_Planning_with_World_Model.md) (Hao et al., 2023)
-- [Reflexion: Language Agents with Verbal Reinforcement Learning](https://github.com/lisaalaz/papers/blob/master/papers/Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.md) (Shinn et al., 2023)
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023)
+- [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Zhou et al., 2023)
 
 #### LLMs with tools
-- [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://github.com/lisaalaz/papers/blob/master/papers/Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools.md) (Schick et al., 2023)
-
+- [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 
 #### Calibration/robustness
 - [Uncertainty in Natural Language Generation: From Theory to Applications](https://github.com/lisaalaz/papers/blob/master/papers/Uncertainty_in_NLG_from_Theory_to_Applications.md) (Baan et al., 2023)

@@ -2,7 +2,7 @@ A collection of short summaries of ML and NLP papers.
 
 
 #### Strategic planning and reasoning
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023)
+<!--- - [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023) --->
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://github.com/lisaalaz/papers/blob/master/papers/Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.md) (Shinn et al., 2023)
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Tree_of_Thoughts_Deliberate_Problem_Solving_with_Large_Language_Models.md) (Yao et al., 2023)
 - [Reasoning with Language Model is Planning with World Model](https://github.com/lisaalaz/papers/blob/master/papers/Reasoning_with_Language_Model_is_Planning_with_World_Model.md) (Hao et al., 2023)

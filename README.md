@@ -2,6 +2,7 @@ A collection of short summaries of ML and NLP papers.
 
 
 #### Strategic planning and reasoning
+- [Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution](https://github.com/lisaalaz/papers/blob/master/papers/Promptbreeder_Self-Referential_Self-Improvement_Via_Prompt_Evolution.md) (Fernando et al., 2023)
 <!--- - [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023) --->
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://github.com/lisaalaz/papers/blob/master/papers/Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.md) (Shinn et al., 2023)
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Tree_of_Thoughts_Deliberate_Problem_Solving_with_Large_Language_Models.md) (Yao et al., 2023)

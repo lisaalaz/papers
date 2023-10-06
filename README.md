@@ -3,11 +3,11 @@ A collection of short summaries of ML and NLP papers.
 
 #### Strategic planning and reasoning
 - [Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution](https://github.com/lisaalaz/papers/blob/master/papers/Promptbreeder_Self-Referential_Self-Improvement_Via_Prompt_Evolution.md) (Fernando et al., 2023)
-<!--- - [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023) --->
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://github.com/lisaalaz/papers/blob/master/papers/Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.md) (Shinn et al., 2023)
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Tree_of_Thoughts_Deliberate_Problem_Solving_with_Large_Language_Models.md) (Yao et al., 2023)
 - [Reasoning with Language Model is Planning with World Model](https://github.com/lisaalaz/papers/blob/master/papers/Reasoning_with_Language_Model_is_Planning_with_World_Model.md) (Hao et al., 2023)
 - [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Zhou et al., 2023)
+<!--- - [ReAct: Synergizing Reasoning and Acting in Language Models](https://github.com/lisaalaz/papers/blob/master/papers/ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.md) (Yao et al., 2023) --->
 
 #### LLMs with tools
 - [ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings](https://github.com/lisaalaz/papers/blob/master/papers/ToolkenGPT_Augmenting_Frozen_Language_Models_with_Massive_Tools_via_Tool_Embeddings.md) (Hao et al., 2023)

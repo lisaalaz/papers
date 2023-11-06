@@ -13,6 +13,7 @@ A collection of short summaries of ML and NLP papers.
 - [ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings](https://github.com/lisaalaz/papers/blob/master/papers/ToolkenGPT_Augmenting_Frozen_Language_Models_with_Massive_Tools_via_Tool_Embeddings.md) (Hao et al., 2023)
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](https://github.com/lisaalaz/papers/blob/master/papers/Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools.md) (Schick et al., 2023)
 - [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
+- [Gorilla: Large Language Model Connected with Massive APIs](https://github.com/lisaalaz/papers/blob/master/papers/Gorilla_Large_Language_Model_Connected_with_Massive_APIs.md) (Patil et al., 2023)
 
 #### Calibration/robustness
 - [Uncertainty in Natural Language Generation: From Theory to Applications](https://github.com/lisaalaz/papers/blob/master/papers/Uncertainty_in_NLG_from_Theory_to_Applications.md) (Baan et al., 2023)

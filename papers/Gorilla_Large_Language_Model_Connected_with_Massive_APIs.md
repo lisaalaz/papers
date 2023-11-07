@@ -31,7 +31,7 @@
   - Model
     - They instruction-finetune a LLaMA-7B model. They use the dataset pairs to create a 2-turn user-agent conversation (1 turn each).
     - They try training the model with and without a retriever (they try BM25, GPT-Index as well as oracle retrieval). They do so by appending to the model prompt the text "Use this API documentation for reference: <retrieved_API_doc_JSON>", where the latter is replaced with the actual retrieval. In doing so, the model needs to parse this part of the prompt to answer the preceding question.
-    - With retrieval, the LLM better adapts to test-time changes in the API documentation, though retrieval sometimes hurt performance.
+    - With retrieval, the LLM better adapts to test-time changes in the API documentation, though retrieval sometimes hurt performance (see evaluation below).
     - At inference time, the process is different for the retrieval-augmented mode and the zero-shot mode:
 
       1) When in zero-shot mode, the user's prompt (e.g. “I would like to identify the objects in an image”) is fed into Gorilla, which will return the API call.

@@ -47,15 +47,14 @@
 
   - They evaluate on APIBench and compare to zero-shot baselines given by GPT-4, GPT-3.5-turbo, Anthropic's Claude and LLaMa-7B, and find:
     
-    1) Gorilla is the best performing model in terms of accuracy on API call on TorchHub and HuggingFace and is at least as good as the other models n TensorflowHub. Note that AST accuracy is used for evaluation apart from the case of HuggingFace, where only if the model has provided the correct domain name is checked (since the dataset is not exhaustive).
+    1) Gorilla is the best performing model in terms of accuracy on API call on TorchHub and HuggingFace and is at least as good as the other models in TensorflowHub. Note that AST accuracy is used for evaluation apart from the case of HuggingFace, where only if the model has provided the correct domain name is checked (since the dataset is not exhaustive).
     2) Lightly fine-tuned Gorilla is the best performing setting, beating all other models by a large margin (20.43% better than GPT-4, 10.75% better than ChatGPT and 83% over LLaMA). The authors conclude from this that in this context, finetuning is better than retrieval.
+    3) Finetuning without retriever and then using the oracle retrieval in the evaluation is inconsisent in the performance results (0.88% worse in TensorHub and 0.97% better in HuggingFace). When not using the oracle at inference, the results are much worse (21.50% in Torch Hub and 47.57% in HuggingFace), as retrieval error propagates to the generated API call.
+    4) Finetuning Gorilla with gold retrievals (oracle) achieves higher results than training without retrieval (12.37% better in Torch Hub and 23.46% better in HuggingFace). On the other hand, imperfect retrieval (i.e. non-oracle) still degrades performance at inference (using GPT-Index gives 29.20% degradation, and BM25 results in 52.27% accuracy degradation). However, the authors point out that a better retriever would still do well.
 
   <img src="https://github.com/lisaalaz/papers/blob/master/images/Gorilla_AST_acc_plot.png" width="800">
 
   <img src="https://github.com/lisaalaz/papers/blob/master/images/Gorilla_AST_acc_table.png" width="800">
-
-    3) Finetuning without retriever and then using the oracle retrieval in the evaluation is inconsisent in the performance results (0.88% worse in TensorHub and 0.97% better in HuggingFace). When not using the oracle at inference, the results are much worse (21.50% in Torch Hub and 47.57% in HuggingFace), as retrieval error propagates to the generated API call.
-    4) Finetuning Gorilla with gold retrievals (oracle) achieves higher results than training without retrieval (12.37% better in Torch Hub and 23.46% better in HuggingFace). On the other hand, imperfect retrieval (i.e. non-oracle) still degrades performance at inference (using GPT-Index gives 29.20% degradation, and BM25 results in 52.27% accuracy degradation). However, the authors point out that a better retriever would still do well.
   
   <img src="https://github.com/lisaalaz/papers/blob/master/images/Gorilla_retrieval_comparison.png" width="850">
   

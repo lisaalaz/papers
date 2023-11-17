@@ -40,9 +40,9 @@
        (b) $L_i^{-} = \min(L_i(\epsilon), L_i(\textbf{e}(c_i, \epsilon))$ where $\epsilon$ represents the empty sequence (this is the minimum of the losses of doing no API call or having the API call without response).
 
        They thus filter the sampled calls by keeping only those for which $L_i^{-} - L_i^{+} >= {\tau}_f$ holds, for a filtering threshold ${\tau}_f$.
-    4) Finally they merge API calls for different tools with the data, resulting in the augmented dataset $C^{*}$ (some texts in $C^{*}$ may have multiple API calls).
+    4) Finally they merge API calls for different tools with the data, resulting in the augmented dataset $C^{\*}$ (some texts in $C^{\*}$ may have multiple API calls).
 
-  - They finetune the language model $M$ on $C^{*}$ using a standard language modeling objective ($L(S) = \sum_i \log p(t_i | t_{i-c},...,t_{i-1}; \Theta)$)
+  - They finetune the language model $M$ on $C^{\*}$ using a standard language modeling objective ($L(S) = \sum_i \log p(t_i | t_{i-c},...,t_{i-1}; \Theta)$)
 
 - Inference method
   

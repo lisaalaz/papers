@@ -15,13 +15,12 @@ A collection of short summaries of ML and NLP papers.
 - [ViperGPT: Visual Inference via Python Execution for Reasoning](https://github.com/lisaalaz/papers/blob/master/papers/ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning.md) (Surís et al., 2023)
 - [Gorilla: Large Language Model Connected with Massive APIs](https://github.com/lisaalaz/papers/blob/master/papers/Gorilla_Large_Language_Model_Connected_with_Massive_APIs.md) (Patil et al., 2023)
 
-#### Calibration/robustness
-- [Uncertainty in Natural Language Generation: From Theory to Applications](https://github.com/lisaalaz/papers/blob/master/papers/Uncertainty_in_NLG_from_Theory_to_Applications.md) (Baan et al., 2023)
+<! -- #### Calibration/robustness -->
+<! -- - [Uncertainty in Natural Language Generation: From Theory to Applications](https://github.com/lisaalaz/papers/blob/master/papers/Uncertainty_in_NLG_from_Theory_to_Applications.md) (Baan et al., 2023) -->
 
 #### LVLMs
 - [PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://github.com/lisaalaz/papers/blob/master/papers/PaLI_A_Jointly-Scaled_Multilingual_Language-Image_Model.md) (Chen et al., 2022)
 - [KAT: A Knowledge Augmented Transformer for Vision-and-Language](https://github.com/lisaalaz/papers/blob/master/papers/KAT_A_Knowledge_Augmented_Transformer_for_Vision-and-Language.md) (Gui et al., 2022)
-
 
 #### Retrieval-augmented generation
 - [Improving Language Models by Retrieving from Trillions of Tokens](https://github.com/lisaalaz/papers/blob/master/papers/Improving_Language_Models_by_Retrieving_from_Trillions_of_Tokens.md) (Borgeaud et al., 2021)

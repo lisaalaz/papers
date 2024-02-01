@@ -25,7 +25,7 @@
 
   - Strategy
     - To design the aforementioned planning process for LMs, the authors return to the origins of AI and cognitive science drawing inspiration from planning processes explored by scholars in the 1950s: problem solving was then characterised as a search through a combinatorial problem space represented as a tree.
-    - Therefore, their ToT method actively maintains a tree of thoughts where each thought is a coherent language sequences that serves as an intermediate step toward solving a problem.
+    - Therefore, their ToT method actively maintains a tree of thoughts where each thought is a coherent language sequence that serves as an intermediate step toward solving a problem.
     - The LM can then self-evaluate the progress that different intermediate thoughts make toward solving the problen.
     - This is combined with search algorithms, e.g. breadth-first search (BFS) and depth-first search (DFS), allowing exploration of the tree, lookahead and backtracking.
 

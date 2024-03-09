@@ -69,7 +69,7 @@
     
     <img src="https://github.com/lisaalaz/papers/blob/master/images/L2M_table9_10.png?raw=true" width="800">
     
-    - The least-to-most passed for GSM8K consists of two parts: the first part shows how the original problem can be decomposed into simpler subproblems, while th second part shows how the subproblems are solved in sequence. This prompt thus combines decomposition and subproblem solving into one single instruction.
+    - The least-to-most passed for GSM8K consists of two parts: the first part shows how the original problem can be decomposed into simpler subproblems, while the second part shows how the subproblems are solved in sequence. This prompt thus combines decomposition and subproblem solving into one single instruction.
     - While least-to-most prompting only improves the overall accuracy on GSM8K by a small amount compared to chain-of-thought, this difference is much bigger when we only consider problems which need at least 5 steps to be solved.
     - On DROP, the accuracy difference between chain-of-thought and least-to-most is much greater.
     

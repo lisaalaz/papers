@@ -19,7 +19,7 @@ A collection of short summaries of ML and NLP papers.
 
 #### Calibration/robustness
 <!--- - [Uncertainty in Natural Language Generation: From Theory to Applications](https://github.com/lisaalaz/papers/blob/master/papers/Uncertainty_in_NLG_from_Theory_to_Applications.md) (Baan et al., 2023) --->
-- [PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts](https://github.com/lisaalaz/papers/blob/master/papers/PromptBench_Towards_Evaluating_the_Robustness_of_Large_Language_Models.md)
+- [PromptBench: Towards Evaluating the Robustness of Large Language Models on Adversarial Prompts](https://github.com/lisaalaz/papers/blob/master/papers/PromptBench_Towards_Evaluating_the_Robustness_of_Large_Language_Models.md) (Zhu et al., 2023)
 
 #### LVLMs
 - [PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://github.com/lisaalaz/papers/blob/master/papers/PaLI_A_Jointly-Scaled_Multilingual_Language-Image_Model.md) (Chen et al., 2022)

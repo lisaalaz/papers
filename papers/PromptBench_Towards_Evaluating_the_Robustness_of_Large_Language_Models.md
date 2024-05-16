@@ -14,13 +14,13 @@
   - They introduce a new benchmark - PromptBench - for measuring LLMs' robustness to adversarial prompt perturbations. In this paper, prompts are defined as the set of instructions telling an LLM how to perform the task, and are separate from the (optional) input sample. The authors note that, in practice, a single instruction prompt is often used with multiple samples when performing tasks. (Note that other works, e.g. AdvGlue and ANLI, focus on LLM robustness to perturbations of the input sample instead.)
   - They analyse the performance of a set of LLMs on 8 tasks (13 datasets in total) given these perturbations of the prompts (and find that the LLMs lack robustness).
 
-<img src="" width="500">
+    <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_overview.png" width="1000">
 
 - How
 
   - Dataset
-    
-    <img src="" width="500">
+ 
+      <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_data.png" width="800">
 
     - PromptBench contains 4,788 adversarial prompts in total
     - it consists of 2 different types of prompts:
@@ -29,8 +29,6 @@
       2) task-oriented (providing a description of the task, which encourages the model to generate task-specific outputs based solely on its pre-training knowledge)
     
       each of which can be framed either in zero-shot (ZS) or few-shot (FS) fashion.
-
-      <img src="" width="500">
 
     - For each of these types of prompts, the authors have 4 types of possible attacks:
    
@@ -44,7 +42,7 @@
       It should be stressed that PromptBench focusses on adversarial attacks of the *instruction prompt* rather than the input sample. Here the term "adversarial" is used loosely: attacks aim at simulating common errors and perturbation that may naturally occur.
       The prompt perturbations that prove most effective at undermining the model's response, while also remaining acceptable/imperceptible to the human reader, are selected for inclusion into the dataset.
 
-      <img src="" width="500">
+      <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_exampleprompts.png" width="1000">
 
     - The dataset spans 8 tasks (and 13 datasets in total pertaining to these tasks):
 
@@ -77,10 +75,10 @@
 
 - Results
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_resultsmodelsprompts.png" width="1000">
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_resultsmodelsdatasets.png" width="1000">
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/PromptBench_resultsattacks.png" width="1000">
   
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/PrompBench_resultsattacks_excluding.png" width="1000">

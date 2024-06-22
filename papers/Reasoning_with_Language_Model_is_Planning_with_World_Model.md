@@ -61,3 +61,4 @@
     In this task a set of facts and logical rules is provided, and the agent should verify if a given hypothesis is true or false by applying the logical rules to the facts. In this task, a state is defined as the fact which the agent is currently focusing on, and an action is the selection of a logical rule.
 
     ![image](https://github.com/lisaalaz/papers/assets/89645136/dfb31df8-5243-4991-9797-006b0653f11d)
+

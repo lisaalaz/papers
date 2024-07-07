@@ -14,7 +14,9 @@
   - They introduce a framework for process supervision, providing to the model feedback for each intermediate step of the reasoning process (as opposed to providing feedback just for the final result).
   - They release PRM800K: a dataset of 800K step-level human feedback labels.
 
-<img src="" width="500">
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Lets_verify_overview.png" width="800">
+
+
 
 - How
 
@@ -28,7 +30,9 @@
   
   - Dataset
     
-    <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Lets_verify_data_collection.png" width="800">
+
+
 
     - Human annotators score each step of model-produced solutions to the MATH dataset as either "positive", "neutral" or "negative" (where  a neutral label indicates ambiguity. At test time neutral labels can be treated as either positive or negative).
     - They collect the 800K step-level labels into a dataset (PRM800K). These span 75K solutions to 12K MATH problems. Note that these include problems from the MATH test set (so they only evaluate on the remaining test samples not in this dataset).
@@ -46,8 +50,8 @@
 
 - Results
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Lets_verify_results_1.png" width="800">
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Lets_verify_results_2.png" width="800">
 
-  <img src="" width="500">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Lets_verify_results_3.png" width="800">

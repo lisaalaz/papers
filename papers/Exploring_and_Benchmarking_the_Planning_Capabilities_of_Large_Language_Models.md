@@ -25,10 +25,12 @@
 
 - Results
 
-  <img src="" width="1000">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_1.png" width="1000">
 
-  <img src="" width="1000">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_2.png" width="1000">
 
-  <img src="" width="1000">
-  
-  <img src="" width="1000">
+  <img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_3.png" width="500"><img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_4.png" width="400">
+
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_5.png" width="400">             <img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_6.png" width="420">
+
+<img src="https://github.com/lisaalaz/papers/blob/master/images/Exploring_and_Benchmarking_results_7.png" width="400">

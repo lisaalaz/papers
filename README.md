@@ -2,6 +2,7 @@ A collection of short summaries of ML and NLP papers.
 
 
 #### Strategic planning and reasoning
+- [Exploring and Benchmarking the Planning Capabilities of Large Language Models](https://github.com/lisaalaz/papers/blob/master/papers/Exploring_and_Benchmarking_the_Planning_Capabilities_of_Large_Language_Models.md) (Bohnet et al., 2024)
 - [Let's Verify Step by Step](https://github.com/lisaalaz/papers/blob/master/papers/Lets_Verify_Step_by_Step.md) (Lightman et al., 2023)
 - [Learning to Reason and Memorize with Self-Notes](https://github.com/lisaalaz/papers/blob/master/papers/Least-to-Most_Prompting_Enables_Complex_Reasoning_in_Large_Language_Models.md) (Lanchantin et al., 2023)
 - [Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution](https://github.com/lisaalaz/papers/blob/master/papers/Promptbreeder_Self-Referential_Self-Improvement_Via_Prompt_Evolution.md) (Fernando et al., 2023)
